@@ -19,7 +19,7 @@
 ol {
   display: flex;
   flex-direction: column;
-  list-style: none;
+  /* list-style: none; */
   align-items: center;
   gap: 0px 100px;
 }
@@ -27,7 +27,6 @@ ol {
 li {
   display: flex;
   justify-content: space-between;
-
   margin: 20px;
   cursor: pointer;
   border: none;
@@ -73,4 +72,48 @@ i:hover {
 }
 .red:hover {
   transform: scale(0.95);
+}
+
+@media (max-width: 700px) {
+  .xl {
+    font-size: 35px;
+  }
+
+  .md {
+    font-size: 18px;
+  }
+
+  .input {
+    width: 30%;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  ol {
+    display: flex;
+    flex-direction: column;
+    list-style: lower-roman;
+    align-items: center;
+    gap: 20px 40px;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    width: 40%;
+    padding: 12px;
+    margin: 10px;
+  }
+
+  i {
+    color: rgb(227, 115, 115);
+  }
+
+  i:click() {
+    transform: scale(1.2);
+  }
 }
