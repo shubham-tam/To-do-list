@@ -32,7 +32,9 @@ function printUserInput() {
 }
 
 function inputAfterClick() {
-  printUserInput();
+  {
+    if (checkLength()) printUserInput();
+  }
 }
 
 function inputAfterEnter(event) {
